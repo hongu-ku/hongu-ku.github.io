@@ -1,28 +1,30 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        gh-pages
-      </h1>
-      <h2 class="subtitle">
-        My GitHub Pages
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div class="background">
+    <div class="container">
+      <div>
+        <h2 class="title text-white mt-5">
+          hongu-ku
+        </h2>
+        <h2 class="subtitle">
+          My GitHub Pages
+        </h2>
+        <div class="links">
+          <a
+            href="https://www.qweet.net/"
+            target="_blank"
+            class="btn btn-success"
+          >
+            Qweet
+          </a>
+          <a
+            href="https://github.com/hongu-ku"
+            target="_blank"
+            class="btn btn-secondary"
+          >
+            GitHub
+          </a>
+          <!-- <nuxt-link to="profile"><button class='btn btn-primary'>Introduction</button></nuxt-link> -->
+        </div>
       </div>
     </div>
   </div>
@@ -32,13 +34,15 @@
 import Logo from '~/components/Logo.vue'
 
 export default {
-  components: {
-    Logo
+  data() {
+    return {
+      intro_photo: require('@/assets/intro_photo.jpg')
+    }
   }
 }
 </script>
 
-<style>
+<style scoped>
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -61,12 +65,20 @@ export default {
 .subtitle {
   font-weight: 300;
   font-size: 42px;
-  color: #526488;
+  color: #6af8e5;
   word-spacing: 5px;
   padding-bottom: 15px;
 }
 
 .links {
   padding-top: 15px;
+}
+
+.background {
+  background-image: url('~assets/intro_photo.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 </style>
