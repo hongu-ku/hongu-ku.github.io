@@ -18,16 +18,31 @@
       </div>
     </div>
     <div class="fixed-bg bg03 text-white">
-      <h1>自分に関係するページ</h1>
+      <h1>Services</h1>
     </div>
     <div class="scroll-bg bg04">
       <div class="container">
         <div class="row">
+          <div class="col text-center">
+            <h3><b-link href="https://www.qweet.net" class="text-dark">Qweet</b-link></h3>
+            <p>引用リツイートを用いた議論を時系列順に並べるサービス。<br>自動で人気の引用リツイートを取得する機能もある</p>
+            <video src="@/assets/qweet_small.mp4" class="video" autoplay muted loop></video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fixed-bg bg01 text-white">
+      <h1>Accounts</h1>
+    </div>
+    <div class="scroll-bg my-0 bg02">
+      <div class="container">
+        <div class="row">
           <div class="col">
-            <h3>製作サービス</h3>
+            <!-- <fab :icon="github"/>
+            <font-awesome-icon icon="github"/> -->
             <ul class="list-group list-group-flush">
-              <li class="list-group-item"><b-link href="https://www.qweet.net">引用リツイート検索サービス Qweet</b-link></li>
-              <li class="list-group-item"><b-link href="">webトランプゲーム(製作中)</b-link></li>
+              <li class="list-group-item"><b-link href="https://github.com/hongu-ku/">GitHub</b-link></li>
+              <li class="list-group-item"><b-link href="https://atcoder.jp/users/hongu0901">Atcoder</b-link></li>
             </ul>
           </div>
         </div>
@@ -37,13 +52,18 @@
 </template>
 
 <script>
-
 export default {
+
   data() {
     return {
       intro_photo: require('@/assets/intro_photo.jpg')
     }
-  }
+  },
+  // computed: {
+  //   github() {
+  //     return fabGithub
+  //   }
+  // }
 }
 </script>
 
@@ -86,6 +106,11 @@ export default {
 .bg04 {
   background-color: #f0d58c;
   padding: 20vh 0;
+}
+
+.video {
+  width: 100%;
+  max-width: 70em;
 }
 
 </style>
