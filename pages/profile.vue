@@ -31,7 +31,7 @@
         </div>
       </div>
     </div>
-    <div class="fixed-bg bg01 text-white">
+    <div class="fixed-bg bg05 text-white">
       <h1>Accounts</h1>
     </div>
     <div class="scroll-bg my-0 bg02">
@@ -106,6 +106,10 @@ export default {
 .bg04 {
   background-color: #f0d58c;
   padding: 20vh 0;
+}
+
+.bg05 {
+  background-image: url('~assets/bg05.jpg');
 }
 
 .video {
