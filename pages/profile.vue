@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="fixed-bg bg01 text-white">
-      <h1>自己紹介</h1>
+      <h1>Profile</h1>
     </div>
     <div class="scroll-bg my-0 bg02">
       <div class="container">
