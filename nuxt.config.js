@@ -18,7 +18,12 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    head: {
+      base: {
+       href: 'router.base'
+      }
+    }
   },
   /*
   ** Customize the progress-bar color
