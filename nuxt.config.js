@@ -1,8 +1,8 @@
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/hongu-ku.github.io/'
-  }
-} : {}
+// const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+//   router: {
+//     base: '/hongu-ku.github.io/'
+//   }
+// } : {}
 
 export default {
   mode: 'universal',
@@ -19,11 +19,11 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
-    head: {
-      base: {
-       href: 'router.base'
-      }
-    }
+    // head: {
+    //   base: {
+    //    href: 'router.base'
+    //   }
+    // }
   },
   /*
   ** Customize the progress-bar color
@@ -62,5 +62,5 @@ export default {
     extend (config, ctx) {
     }
   },
-  ...routerBase
+  // ...routerBase
 }
